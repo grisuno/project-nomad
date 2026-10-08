@@ -1,0 +1,334 @@
+{
+  "tool": "readmenator",
+  "schema_version": 2,
+  "generated_at": "2026-10-08T00:59:32Z",
+  "project_root": ".",
+  "project_name": "readmenator_project-nomad_zbxlyvee",
+  "git_commit": "d5f7c3f615c92c07b798b6512b2483fd9d64a89d",
+  "git_branch": "main",
+  "source_fingerprint": "e3c0f41d46f2d89ccad0abac76ab1c5d230d03b80a9800b0c67eb0fff879ebdb",
+  "freshness_check": "readmenator . fresh  # exit 0 = docs match sources, exit 1 = run: readmenator . --rebuild",
+  "files": 294,
+  "symbols": 563,
+  "imports": 668,
+  "calls": 7987,
+  "inherits": 20,
+  "resolved_imports": 422,
+  "security_findings": 0,
+  "languages": {
+    "js": 2,
+    "sh": 11,
+    "ts": 196,
+    "tsx": 85
+  },
+  "subsystems": {
+    "admin": 5,
+    "admin_inertia_providers": 3,
+    "benchmark": 3,
+    "chat": 9,
+    "components": 31,
+    "config": 13,
+    "constants": 8,
+    "context": 2,
+    "controllers": 13,
+    "easy-setup": 2,
+    "errors": 2,
+    "exceptions": 2,
+    "hooks": 15,
+    "inputs": 2,
+    "install": 9,
+    "jobs": 7,
+    "layouts": 4,
+    "lib": 10,
+    "maps": 5,
+    "markdoc": 5,
+    "middleware": 4,
+    "migrations": 29,
+    "misc": 9,
+    "models": 13,
+    "pages": 4,
+    "providers": 5,
+    "services": 18,
+    "settings": 8,
+    "start": 3,
+    "systeminfo": 3,
+    "types": 15,
+    "unit": 9,
+    "util": 3,
+    "utils": 9,
+    "validators": 10,
+    "zim": 2
+  },
+  "entrypoints": [],
+  "start_here": "INDEX.md",
+  "read_order": [
+    "readmenator-wiki/index.md  # big picture, communities, god nodes",
+    "readmenator-agent/INDEX.md  # file -> purpose -> used-by count",
+    "readmenator-agent/GOTCHAS.md  # blast radius before editing",
+    "readmenator-agent/KB_<subsystem>.md  # only the subsystem you touch"
+  ],
+  "workflow": [
+    "ls *.md readmenator-*/  # orient: docs first, ignore build noise",
+    "grep -n '<keyword>' INDEX*.md SYMBOLS*.md",
+    "cat KB_<subsystem>.md",
+    "grep -n '<file>' ARCHITECTURE*.md API*.md"
+  ],
+  "documents": [
+    {
+      "path": "API.md",
+      "lines": 498,
+      "approx_tokens": 8917
+    },
+    {
+      "path": "API_p2.md",
+      "lines": 378,
+      "approx_tokens": 6730
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "lines": 354,
+      "approx_tokens": 7242
+    },
+    {
+      "path": "ARCHITECTURE_p2.md",
+      "lines": 194,
+      "approx_tokens": 4053
+    },
+    {
+      "path": "CONCEPTS.md",
+      "lines": 120,
+      "approx_tokens": 7449
+    },
+    {
+      "path": "GOTCHAS.md",
+      "lines": 64,
+      "approx_tokens": 1016
+    },
+    {
+      "path": "INDEX.md",
+      "lines": 298,
+      "approx_tokens": 6070
+    },
+    {
+      "path": "KB_admin.md",
+      "lines": 24,
+      "approx_tokens": 139
+    },
+    {
+      "path": "KB_admin_inertia_providers.md",
+      "lines": 31,
+      "approx_tokens": 258
+    },
+    {
+      "path": "KB_benchmark.md",
+      "lines": 25,
+      "approx_tokens": 230
+    },
+    {
+      "path": "KB_chat.md",
+      "lines": 73,
+      "approx_tokens": 644
+    },
+    {
+      "path": "KB_components.md",
+      "lines": 253,
+      "approx_tokens": 2005
+    },
+    {
+      "path": "KB_config.md",
+      "lines": 63,
+      "approx_tokens": 420
+    },
+    {
+      "path": "KB_constants.md",
+      "lines": 41,
+      "approx_tokens": 565
+    },
+    {
+      "path": "KB_context.md",
+      "lines": 15,
+      "approx_tokens": 336
+    },
+    {
+      "path": "KB_controllers.md",
+      "lines": 94,
+      "approx_tokens": 1054
+    },
+    {
+      "path": "KB_easy-setup.md",
+      "lines": 42,
+      "approx_tokens": 482
+    },
+    {
+      "path": "KB_errors.md",
+      "lines": 13,
+      "approx_tokens": 70
+    },
+    {
+      "path": "KB_exceptions.md",
+      "lines": 13,
+      "approx_tokens": 76
+    },
+    {
+      "path": "KB_hooks.md",
+      "lines": 122,
+      "approx_tokens": 1163
+    },
+    {
+      "path": "KB_inputs.md",
+      "lines": 12,
+      "approx_tokens": 70
+    },
+    {
+      "path": "KB_install.md",
+      "lines": 109,
+      "approx_tokens": 958
+    },
+    {
+      "path": "KB_jobs.md",
+      "lines": 64,
+      "approx_tokens": 885
+    },
+    {
+      "path": "KB_layouts.md",
+      "lines": 27,
+      "approx_tokens": 201
+    },
+    {
+      "path": "KB_lib.md",
+      "lines": 91,
+      "approx_tokens": 1069
+    },
+    {
+      "path": "KB_maps.md",
+      "lines": 33,
+      "approx_tokens": 206
+    },
+    {
+      "path": "KB_markdoc.md",
+      "lines": 41,
+      "approx_tokens": 288
+    },
+    {
+      "path": "KB_middleware.md",
+      "lines": 31,
+      "approx_tokens": 257
+    },
+    {
+      "path": "KB_migrations.md",
+      "lines": 177,
+      "approx_tokens": 1174
+    },
+    {
+      "path": "KB_misc.md",
+      "lines": 63,
+      "approx_tokens": 530
+    },
+    {
+      "path": "KB_models.md",
+      "lines": 84,
+      "approx_tokens": 520
+    },
+    {
+      "path": "KB_pages.md",
+      "lines": 29,
+      "approx_tokens": 201
+    },
+    {
+      "path": "KB_providers.md",
+      "lines": 46,
+      "approx_tokens": 399
+    },
+    {
+      "path": "KB_services.md",
+      "lines": 191,
+      "approx_tokens": 2441
+    },
+    {
+      "path": "KB_settings.md",
+      "lines": 104,
+      "approx_tokens": 1322
+    },
+    {
+      "path": "KB_start.md",
+      "lines": 13,
+      "approx_tokens": 50
+    },
+    {
+      "path": "KB_systeminfo.md",
+      "lines": 24,
+      "approx_tokens": 163
+    },
+    {
+      "path": "KB_types.md",
+      "lines": 72,
+      "approx_tokens": 648
+    },
+    {
+      "path": "KB_unit.md",
+      "lines": 52,
+      "approx_tokens": 355
+    },
+    {
+      "path": "KB_util.md",
+      "lines": 22,
+      "approx_tokens": 134
+    },
+    {
+      "path": "KB_utils.md",
+      "lines": 97,
+      "approx_tokens": 1086
+    },
+    {
+      "path": "KB_validators.md",
+      "lines": 49,
+      "approx_tokens": 401
+    },
+    {
+      "path": "KB_zim.md",
+      "lines": 34,
+      "approx_tokens": 412
+    },
+    {
+      "path": "SECURITY.md",
+      "lines": 3,
+      "approx_tokens": 10
+    },
+    {
+      "path": "SYMBOLS.md",
+      "lines": 500,
+      "approx_tokens": 10555
+    },
+    {
+      "path": "SYMBOLS_p2.md",
+      "lines": 76,
+      "approx_tokens": 1393
+    },
+    {
+      "path": "recipes/add-function.md",
+      "lines": 9,
+      "approx_tokens": 99
+    },
+    {
+      "path": "recipes/change-impact.md",
+      "lines": 9,
+      "approx_tokens": 114
+    },
+    {
+      "path": "recipes/fix-cycle.md",
+      "lines": 7,
+      "approx_tokens": 162
+    },
+    {
+      "path": "recipes/fix-security.md",
+      "lines": 6,
+      "approx_tokens": 69
+    },
+    {
+      "path": "recipes/reduce-complexity.md",
+      "lines": 9,
+      "approx_tokens": 87
+    }
+  ],
+  "regenerate": "readmenator . --rebuild"
+}

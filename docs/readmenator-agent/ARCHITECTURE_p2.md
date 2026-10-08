@@ -1,0 +1,194 @@
+# Architecture (page 2 of 2)
+Previous: [ARCHITECTURE.md](ARCHITECTURE.md)
+
+## External Imports
+
+- `admin/ace.js` -> ts-node-maintained/register/esm
+- `admin/adonisrc.ts` -> @adonisjs/core/app
+- `admin/app/controllers/benchmark_controller.ts` -> #validators/benchmark, @adonisjs/core, node:crypto
+- `admin/app/controllers/chats_controller.ts` -> #validators/chat, @adonisjs/core
+- `admin/app/controllers/docs_controller.ts` -> @adonisjs/core
+- `admin/app/controllers/downloads_controller.ts` -> @adonisjs/core
+- `admin/app/controllers/easy_setup_controller.ts` -> @adonisjs/core
+- `admin/app/controllers/home_controller.ts` -> @adonisjs/core
+- `admin/app/controllers/maps_controller.ts` -> @adonisjs/core
+- `admin/app/controllers/ollama_controller.ts` -> #validators/ollama, ../../constants/ollama.js, @adonisjs/core
+- `admin/app/controllers/rag_controller.ts` -> #validators/rag, @adonisjs/core, node:crypto, node:path
+- `admin/app/controllers/settings_controller.ts` -> @adonisjs/core
+- `admin/app/controllers/system_controller.ts` -> #validators/system, @adonisjs/core
+- `admin/app/controllers/zim_controller.ts` -> #validators/zim, @adonisjs/core
+- `admin/app/exceptions/handler.ts` -> @adonisjs/core/http
+- `admin/app/exceptions/internal_server_error_exception.ts` -> @adonisjs/core/exceptions
+- `admin/app/jobs/check_service_updates_job.ts` -> bullmq, luxon
+- `admin/app/jobs/check_update_job.ts` -> bullmq
+- `admin/app/jobs/download_model_job.ts` -> bullmq, crypto
+- `admin/app/jobs/embed_file_job.ts` -> ../../types/rag.js, bullmq, crypto
+- `admin/app/jobs/run_benchmark_job.ts` -> bullmq
+- `admin/app/jobs/run_download_job.ts` -> ../../types/downloads.js, ../utils/downloads.js, bullmq, crypto
+- `admin/app/jobs/run_extract_pmtiles_job.ts` -> ../../types/downloads.js, bullmq, child_process, crypto, fs/promises, path
+- `admin/app/middleware/container_bindings_middleware.ts` -> @adonisjs/core/http, @adonisjs/core/types/http
+- `admin/app/middleware/maps_static_middleware.ts` -> @adonisjs/static/types
+- `admin/app/models/benchmark_result.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/benchmark_setting.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/chat_message.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/chat_session.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/collection_manifest.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/custom_library_source.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/installed_resource.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/kb_ingest_state.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/kb_ratio_registry.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/kv_store.ts` -> ../../types/kv_store.js, ../utils/misc.js, @adonisjs/lucid/orm, luxon
+- `admin/app/models/map_marker.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/service.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/models/wikipedia_selection.ts` -> @adonisjs/lucid/orm, luxon
+- `admin/app/services/benchmark_service.ts` -> @adonisjs/core, luxon, node:crypto
+- `admin/app/services/chat_service.ts` -> ../../constants/ollama.js, ../utils/misc.js, @adonisjs/core, luxon
+- `admin/app/services/collection_manifest_service.ts` -> luxon, path
+- `admin/app/services/collection_update_service.ts` -> ../../constants/misc.js, path
+- `admin/app/services/countries_service.ts` -> crypto, fs/promises, os, path
+- `admin/app/services/docker_service.ts` -> ../utils/downloads.js, @adonisjs/core, child_process, node:fs/promises, path, util
+- `admin/app/services/download_service.ts` -> ../../types/downloads.js, @adonisjs/core, path
+- `admin/app/services/kiwix_library_service.ts` -> @openzim/libzim, fast-xml-parser, fs/promises, node:crypto, path
+- `admin/app/services/map_service.ts` -> ../../types/files.js, ../../types/maps.js, ../utils/downloads.js, child_process, crypto, os, path, tar, util
+- `admin/app/services/ollama_service.ts` -> ../../constants/misc.js, ../../constants/ollama.js, ../../types/ollama.js, @adonisjs/core
+- `admin/app/services/queue_service.ts` -> bullmq
+- `admin/app/services/rag_service.ts` -> ../../constants/ollama.js, ../../types/rag.js, @adonisjs/core, @chonkiejs/core, @qdrant/js-client-rest, node:crypto, node:path, pdf-parse, pdf2pic, stopword, tesseract.js
+- `admin/app/services/system_service.ts` -> ../../types/kv_store.js, ../../types/system.js, @adonisjs/core, node:fs, node:fs/promises
+- `admin/app/services/system_update_service.ts` -> fs/promises, path
+- `admin/app/services/zim_extraction_service.ts` -> ../../types/zim.js, @openzim/libzim, node:crypto, node:fs/promises
+- `admin/app/services/zim_service.ts` -> ../../types/downloads.js, ../../types/zim.js, ../../util/zim.js, @adonisjs/core, fast-xml-parser, path
+- `admin/app/utils/downloads.ts` -> ../../types/downloads.js, fs/promises, stream
+- `admin/app/utils/fs.ts` -> ../../types/files.js, ../../types/system.js, fs/promises
+- `admin/app/validators/settings.ts` -> ../../constants/kv_store.js
+- `admin/commands/queue/work.ts` -> bullmq
+- `admin/config/app.ts` -> @adonisjs/core/helpers, @adonisjs/core/http
+- `admin/config/database.ts` -> @adonisjs/lucid
+- `admin/config/transmit.ts` -> @adonisjs/transmit/transports
+- `admin/constants/kv_store.ts` -> ../types/kv_store.js
+- `admin/constants/ollama.ts` -> ../types/ollama.js
+- `admin/database/migrations/1751086751801_create_services_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1763499145832_update_services_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1764912210741_create_curated_collections_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1764912270123_create_curated_collection_resources_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1768170944482_update_services_add_installation_statuses_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1768453747522_update_services_add_icon.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769097600001_create_benchmark_results_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769097600002_create_benchmark_settings_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769300000001_add_powered_by_and_display_order_to_services.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769300000002_update_services_friendly_names.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769324448000_add_builder_tag_to_benchmark_results.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769400000001_create_installed_tiers_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769400000002_create_kv_store_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769500000001_create_wikipedia_selection_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769646771604_create_create_chat_sessions_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769646798266_create_create_chat_messages_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1769700000001_create_zim_file_metadata_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1770269324176_add_unique_constraint_to_curated_collection_resources_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1770273423670_drop_installed_tiers_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1770849108030_create_create_collection_manifests_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1770849119787_create_create_installed_resources_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1770850092871_create_drop_legacy_curated_tables_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1771000000001_add_update_fields_to_services.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1771000000002_pin_latest_service_images.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1771100000001_migrate_kiwix_to_library_mode.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1771200000001_create_map_markers_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1775100000001_create_custom_library_sources_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1776000000001_create_kb_ingest_state_table.ts` -> @adonisjs/lucid/schema
+- `admin/database/migrations/1776100000001_create_kb_ratio_registry_table.ts` -> @adonisjs/lucid/schema, luxon
+- `admin/database/seeders/service_seeder.ts` -> @adonisjs/lucid/seeders, @adonisjs/lucid/types/model
+- `admin/eslint.config.js` -> @adonisjs/eslint-config
+- `admin/inertia/app/app.tsx` -> ../css/app.css, @adonisjs/inertia/helpers, @inertiajs/react, @tanstack/react-query, @tanstack/react-query-devtools, react-adonis-transmit, react-dom/client, ~/lib/util
+- `admin/inertia/components/ActiveDownloads.tsx` -> @tabler/icons-react, react, ~/lib/util
+- `admin/inertia/components/ActiveEmbedJobs.tsx` -> react
+- `admin/inertia/components/ActiveModelDownloads.tsx` -> @tabler/icons-react, react, ~/lib/util
+- `admin/inertia/components/BouncingLogo.tsx` -> react
+- `admin/inertia/components/BuilderTagSelector.tsx` -> @tabler/icons-react, react, ~/lib/builderTagWords
+- `admin/inertia/components/CategoryCard.tsx` -> @tabler/icons-react, ~/lib/util
+- `admin/inertia/components/CountryPickerModal.tsx` -> @tabler/icons-react, @tanstack/react-query, react, ~/lib/util
+- `admin/inertia/components/CuratedCollectionCard.tsx` -> @tabler/icons-react, ~/lib/util
+- `admin/inertia/components/DebugInfoModal.tsx` -> @tabler/icons-react, react
+- `admin/inertia/components/DownloadURLModal.tsx` -> react
+- `admin/inertia/components/Footer.tsx` -> @inertiajs/react, @tabler/icons-react, react
+- `admin/inertia/components/InfoTooltip.tsx` -> @tabler/icons-react, react
+- `admin/inertia/components/InstallActivityFeed.tsx` -> @tabler/icons-react, react
+- `admin/inertia/components/KbGuardrailModal.tsx` -> @headlessui/react, @tabler/icons-react, react, ~/lib/util
+- `admin/inertia/components/StorageProjectionBar.tsx` -> @tabler/icons-react, ~/lib/util
+- `admin/inertia/components/StyledButton.tsx` -> @tabler/icons-react, react
+- `admin/inertia/components/StyledModal.tsx` -> @headlessui/react
+- `admin/inertia/components/StyledSectionHeader.tsx` -> react
+- `admin/inertia/components/StyledSidebar.tsx` -> @headlessui/react, @inertiajs/react, @tabler/icons-react, react
+- `admin/inertia/components/StyledTable.tsx` -> ~/lib/util
+- `admin/inertia/components/ThemeToggle.tsx` -> @tabler/icons-react
+- `admin/inertia/components/TierSelectionModal.tsx` -> @headlessui/react, @tabler/icons-react, @tanstack/react-query, react, ~/lib/collections, ~/lib/util
+- `admin/inertia/components/UpdateServiceModal.tsx` -> @tabler/icons-react, react
+- `admin/inertia/components/WikipediaSelector.tsx` -> @tabler/icons-react, ~/lib/util
+- `admin/inertia/components/chat/ChatAssistantAvatar.tsx` -> @tabler/icons-react
+- `admin/inertia/components/chat/ChatButton.tsx` -> @tabler/icons-react
+- `admin/inertia/components/chat/ChatInterface.tsx` -> @inertiajs/react, @tabler/icons-react, react
+- `admin/inertia/components/chat/ChatModal.tsx` -> @headlessui/react
+- `admin/inertia/components/chat/ChatSidebar.tsx` -> @inertiajs/react, @tabler/icons-react, react
+- `admin/inertia/components/chat/KbPolicyPromptBanner.tsx` -> @inertiajs/react, @tabler/icons-react, @tanstack/react-query
+- `admin/inertia/components/chat/KnowledgeBaseModal.tsx` -> @tabler/icons-react, @tanstack/react-query, react
+- `admin/inertia/components/chat/index.tsx` -> @tabler/icons-react, @tanstack/react-query, react, ~/lib/util
+- `admin/inertia/components/file-uploader/index.tsx` -> ./index.css, @uppy/core/css/style.min.css, @uppy/dashboard/css/style.min.css, @uppy/react, react
+- `admin/inertia/components/inputs/Input.tsx` -> react
+- `admin/inertia/components/layout/BackToHomeHeader.tsx` -> @inertiajs/react, @tabler/icons-react
+- `admin/inertia/components/maps/MapComponent.tsx` -> maplibre-gl/dist/maplibre-gl.css, pmtiles, react
+- `admin/inertia/components/maps/MarkerPanel.tsx` -> @tabler/icons-react, react
+- `admin/inertia/components/maps/MarkerPin.tsx` -> @tabler/icons-react
+- `admin/inertia/components/systeminfo/CircularGauge.tsx` -> react
+- `admin/inertia/context/ModalContext.ts` -> react
+- `admin/inertia/context/NotificationContext.ts` -> react
+- `admin/inertia/hooks/useDebounce.ts` -> react
+- `admin/inertia/hooks/useDiskDisplayData.ts` -> systeminformation, ~/lib/util
+- `admin/inertia/hooks/useDownloads.ts` -> @tanstack/react-query, react
+- `admin/inertia/hooks/useEmbedJobs.ts` -> @tanstack/react-query, react
+- `admin/inertia/hooks/useInternetStatus.ts` -> @tanstack/react-query, react
+- `admin/inertia/hooks/useMapMarkers.ts` -> react
+- `admin/inertia/hooks/useMapRegionFiles.ts` -> @tanstack/react-query
+- `admin/inertia/hooks/useOllamaModelDownloads.ts` -> react, react-adonis-transmit
+- `admin/inertia/hooks/useServiceInstallationActivity.ts` -> react, react-adonis-transmit
+- `admin/inertia/hooks/useServiceInstalledStatus.tsx` -> @tanstack/react-query
+- `admin/inertia/hooks/useSystemInfo.ts` -> @tanstack/react-query
+- `admin/inertia/hooks/useSystemSetting.ts` -> @tanstack/react-query
+- `admin/inertia/hooks/useTheme.ts` -> react
+- `admin/inertia/hooks/useUpdateAvailable.ts` -> @tanstack/react-query
+- `admin/inertia/layouts/AppLayout.tsx` -> @inertiajs/react, @tabler/icons-react, react
+- `admin/inertia/layouts/DocsLayout.tsx` -> @tanstack/react-query, react
+- `admin/inertia/layouts/SettingsLayout.tsx` -> @inertiajs/react, @tabler/icons-react
+- `admin/inertia/lib/icons.ts` -> @tabler/icons-react
+- `admin/inertia/pages/chat.tsx` -> @inertiajs/react
+- `admin/inertia/pages/docs/show.tsx` -> @inertiajs/react
+- `admin/inertia/pages/easy-setup/complete.tsx` -> @inertiajs/react
+- `admin/inertia/pages/easy-setup/index.tsx` -> @inertiajs/react, @tabler/icons-react, @tanstack/react-query, react, ~/lib/collections
+- `admin/inertia/pages/home.tsx` -> @inertiajs/react, @tabler/icons-react
+- `admin/inertia/pages/maps.tsx` -> @inertiajs/react, @tabler/icons-react, react
+- `admin/inertia/pages/settings/apps.tsx` -> @inertiajs/react, @tabler/icons-react, react, react-adonis-transmit
+- `admin/inertia/pages/settings/benchmark.tsx` -> @inertiajs/react, @tabler/icons-react, @tanstack/react-query, react, react-adonis-transmit
+- `admin/inertia/pages/settings/legal.tsx` -> @inertiajs/react
+- `admin/inertia/pages/settings/maps.tsx` -> @inertiajs/react, @tanstack/react-query, react, ~/lib/util
+- `admin/inertia/pages/settings/models.tsx` -> @inertiajs/react, @tabler/icons-react, @tanstack/react-query, react, ~/lib/util
+- `admin/inertia/pages/settings/support.tsx` -> @inertiajs/react, @tabler/icons-react
+- `admin/inertia/pages/settings/system.tsx` -> @inertiajs/react, @tabler/icons-react, react, ~/lib/util
+- `admin/inertia/pages/settings/update.tsx` -> @inertiajs/react, @tabler/icons-react, @tanstack/react-query, react, ~/lib/util
+- `admin/inertia/pages/settings/zim/index.tsx` -> @inertiajs/react, @tabler/icons-react, @tanstack/react-query, react, ~/lib/util
+- `admin/inertia/pages/settings/zim/remote-explorer.tsx` -> @inertiajs/react, @tabler/icons-react, @tanstack/react-query, @tanstack/react-virtual, react, ~/lib/util
+- `admin/inertia/providers/ModalProvider.tsx` -> react
+- `admin/inertia/providers/NotificationProvider.tsx` -> @tabler/icons-react, react, ~/lib/util
+- `admin/inertia/providers/ThemeProvider.tsx` -> react
+- `admin/providers/map_static_provider.ts` -> path
+- `admin/tests/bootstrap.ts` -> @japa/assert, @japa/plugin-adonisjs
+- `admin/tests/unit/cloud_metadata_url.spec.ts` -> node:test
+- `admin/tests/unit/global_map_banner.spec.ts` -> node:test
+- `admin/tests/unit/kb_file_grouping.spec.ts` -> node:test
+- `admin/tests/unit/kb_guardrail.spec.ts` -> node:test
+- `admin/tests/unit/kb_ingest_decision.spec.ts` -> node:test
+- `admin/tests/unit/kb_job_health.spec.ts` -> node:test
+- `admin/tests/unit/kb_ratio_lookup.spec.ts` -> node:test
+- `admin/tests/unit/kb_warning_decision.spec.ts` -> node:test
+- `admin/tests/unit/zim_filename.spec.ts` -> node:test
+- `admin/types/system.ts` -> systeminformation
+- `admin/types/zim.ts` -> ./files.js
+- `admin/util/zim.ts` -> ../types/zim.js
+- `admin/vite.config.ts` -> @adonisjs/core/helpers
+

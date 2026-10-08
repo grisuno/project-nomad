@@ -1,0 +1,162 @@
+[
+  {
+    "community_a": 3,
+    "community_b": 8,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/benchmark_controller.ts imports admin/inertia/pages/docs/show.tsx.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 3,
+    "community_b": 6,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/benchmark_controller.ts imports admin/app/validators/settings.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 2,
+    "community_b": 8,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/chats_controller.ts imports admin/inertia/pages/docs/show.tsx.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 2,
+    "community_b": 7,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/chats_controller.ts imports admin/inertia/pages/settings/update.tsx.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 1,
+    "community_b": 2,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/easy_setup_controller.ts imports admin/app/services/system_service.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 1,
+    "community_b": 6,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/easy_setup_controller.ts imports admin/inertia/pages/easy-setup/complete.tsx.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 2,
+    "community_b": 3,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/ollama_controller.ts imports admin/app/services/docker_service.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 6,
+    "community_b": 2,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/settings_controller.ts imports admin/app/services/ollama_service.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 6,
+    "community_b": 0,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/settings_controller.ts imports admin/inertia/pages/settings/models.tsx.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 6,
+    "community_b": 7,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/controllers/settings_controller.ts imports admin/inertia/pages/settings/update.tsx.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 3,
+    "community_b": 1,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/jobs/check_service_updates_job.ts imports admin/app/services/queue_service.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 1,
+    "community_b": 7,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/jobs/download_model_job.ts imports admin/inertia/pages/settings/update.tsx.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 3,
+    "community_b": 7,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/services/benchmark_service.ts imports admin/inertia/pages/settings/update.tsx.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 8,
+    "community_b": 1,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/app/services/docs_service.ts imports admin/app/utils/fs.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 4,
+    "community_b": 1,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/inertia/components/CountryPickerModal.tsx imports admin/constants/map_regions.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 6,
+    "community_b": 4,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/inertia/components/InstallActivityFeed.tsx imports admin/inertia/lib/classNames.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 5,
+    "community_b": 4,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/inertia/components/StyledSidebar.tsx imports admin/inertia/lib/classNames.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 0,
+    "community_b": 4,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/inertia/components/WikipediaSelector.tsx imports admin/inertia/lib/classNames.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 8,
+    "community_b": 0,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/inertia/components/chat/KnowledgeBaseModal.tsx imports admin/inertia/context/NotificationContext.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  },
+  {
+    "community_a": 4,
+    "community_b": 7,
+    "connection_type": "depends_on",
+    "explanation": "Extracted import edge crosses communities: admin/inertia/components/chat/index.tsx imports admin/inertia/hooks/useSystemSetting.ts.",
+    "strength": 0.9,
+    "confidence": "EXTRACTED"
+  }
+]
