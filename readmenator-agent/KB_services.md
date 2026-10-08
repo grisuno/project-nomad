@@ -119,7 +119,6 @@
 - Imported by: `admin/app/controllers/maps_controller.ts`, `admin/app/controllers/settings_controller.ts`, `admin/app/jobs/run_download_job.ts`
 
 ## admin/app/services/ollama_service.ts
-- Doc: partialTagSuffix: Returns how many trailing chars of `text` could be the start of `tag`
 - Layer: business_logic
 - Language: ts
 - Symbols:
@@ -134,7 +133,6 @@
 - Imported by: `admin/app/controllers/ollama_controller.ts`, `admin/app/controllers/settings_controller.ts`, `admin/app/jobs/download_model_job.ts`, `admin/app/jobs/embed_file_job.ts`, `admin/app/services/chat_service.ts`, `admin/app/services/rag_service.ts`
 
 ## admin/app/services/queue_service.ts
-- Doc: QueueService: Process-wide singleton.
 - Layer: business_logic
 - Language: ts
 - Symbols:
@@ -152,7 +150,6 @@
 - Imported by: `admin/app/controllers/ollama_controller.ts`, `admin/app/controllers/rag_controller.ts`, `admin/app/jobs/embed_file_job.ts`
 
 ## admin/app/services/system_service.ts
-- Doc: hasLspciBogusDgpuVram: Clear the bogus value up front.
 - Layer: business_logic
 - Language: ts
 - Symbols:
@@ -175,7 +172,7 @@
 - Imported by: `admin/app/controllers/system_controller.ts`
 
 ## admin/app/services/zim_extraction_service.ts
-- Layer: business_logic
+- Layer: presentation
 - Language: ts
 - Symbols:
   - `ZIMExtractionService` (class, line 10)

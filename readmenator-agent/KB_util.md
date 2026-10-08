@@ -5,7 +5,7 @@
 - Language: ts
 - Symbols:
   - `streamToString` (function, line 2)
-- Imported by: `admin/app/services/docs_service.ts`, `admin/inertia/lib/kb_file_grouping.ts`
+- Imported by: `admin/app/services/docs_service.ts`, `admin/inertia/lib/kb_file_grouping.ts`, `admin/inertia/lib/kb_file_grouping.ts`
 
 ## admin/util/files.ts
 - Layer: utility

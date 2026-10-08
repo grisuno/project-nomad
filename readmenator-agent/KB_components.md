@@ -50,14 +50,12 @@
   - `BouncingDots` (function, line 9)
 
 ## admin/inertia/components/BouncingLogo.tsx
-- Doc: FadingImage: Fading Image Component
 - Layer: presentation
 - Language: tsx
 - Symbols:
   - `FadingImage` (function, line 4)
 
 ## admin/inertia/components/BuilderTagSelector.tsx
-- Doc: updateTag: Update parent when selections change
 - Layer: presentation
 - Language: tsx
 - Symbols:
@@ -68,7 +66,6 @@
   - `handleRandomize` (function, line 65)
 
 ## admin/inertia/components/CategoryCard.tsx
-- Doc: getTierTotalSize: Calculate total size range across all tiers
 - Layer: presentation
 - Language: tsx
 - Symbols:
@@ -148,7 +145,6 @@
 - Language: tsx
 
 ## admin/inertia/components/MarkdocRenderer.tsx
-- Doc: Paragraph: Paragraph component
 - Layer: presentation
 - Language: tsx
 - Symbols:
@@ -167,7 +163,6 @@
   - `ProgressBar` (function, line 1)
 
 ## admin/inertia/components/StorageProjectionBar.tsx
-- Doc: getProjectedColor: Determine warning level based on projected total
 - Layer: presentation
 - Language: tsx
 - Symbols:
@@ -226,7 +221,6 @@
 - Depends on: `admin/inertia/providers/ThemeProvider.tsx`
 
 ## admin/inertia/components/TierSelectionModal.tsx
-- Doc: getAllResourcesForTier: Get all resources for a tier (including inherited resources).
 - Layer: presentation
 - Language: tsx
 - Symbols:

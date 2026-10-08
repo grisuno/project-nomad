@@ -47,7 +47,6 @@
 - Depends on: `admin/inertia/lib/classNames.ts`, `admin/types/chat.ts`
 
 ## admin/inertia/components/chat/KbPolicyPromptBanner.tsx
-- Doc: KbPolicyPromptBanner: (`rag.defaultIngestPolicy` unset).
 - Layer: presentation
 - Language: tsx
 - Symbols:

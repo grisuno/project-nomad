@@ -4,31 +4,16 @@
 
 These files have the most connections. Changes here have high blast radius.
 
-- `admin/inertia/lib/classNames.ts` (score: 40.10, imported by 20 files)
-- `admin/app/services/docker_service.ts` (score: 36.50, imported by 11 files)
-- `admin/constants/service_names.ts` (score: 36.00, imported by 18 files)
-- `admin/inertia/pages/settings/update.tsx` (score: 34.90, imported by 13 files)
-- `admin/app/utils/fs.ts` (score: 31.50, imported by 15 files)
-- `admin/app/services/system_service.ts` (score: 26.70, imported by 8 files)
-- `admin/inertia/context/NotificationContext.ts` (score: 24.10, imported by 12 files)
-- `admin/app/jobs/embed_file_job.ts` (score: 22.60, imported by 3 files)
-- `admin/app/services/rag_service.ts` (score: 22.30, imported by 3 files)
-- `admin/app/jobs/run_download_job.ts` (score: 22.20, imported by 6 files)
-
-## Blast Radius (change impact)
-
-Editing these files can break the listed number of dependents. Run their tests after any change.
-
-- `admin/inertia/context/NotificationContext.ts` -- 12 direct, 50 total dependents
-- `admin/types/system.ts` -- 9 direct, 49 total dependents
-- `admin/constants/service_names.ts` -- 18 direct, 41 total dependents
-- `admin/types/kv_store.ts` -- 1 direct, 41 total dependents
-- `admin/types/services.ts` -- 9 direct, 41 total dependents
-- `admin/inertia/hooks/useSystemSetting.ts` -- 4 direct, 40 total dependents
-- `admin/app/utils/version.ts` -- 6 direct, 39 total dependents
-- `admin/inertia/pages/settings/update.tsx` -- 13 direct, 36 total dependents
-- `admin/app/utils/fs.ts` -- 15 direct, 35 total dependents
-- `admin/constants/broadcast.ts` -- 8 direct, 35 total dependents
+- `admin/inertia/lib/classNames.ts` (score: 40.10)
+- `admin/app/services/docker_service.ts` (score: 36.50)
+- `admin/constants/service_names.ts` (score: 36.00)
+- `admin/inertia/pages/settings/update.tsx` (score: 34.90)
+- `admin/app/utils/fs.ts` (score: 31.50)
+- `admin/app/services/system_service.ts` (score: 26.70)
+- `admin/inertia/context/NotificationContext.ts` (score: 24.10)
+- `admin/app/jobs/embed_file_job.ts` (score: 22.60)
+- `admin/app/services/rag_service.ts` (score: 22.30)
+- `admin/app/jobs/run_download_job.ts` (score: 22.20)
 
 ## Hotspots (complexity + centrality)
 
@@ -56,6 +41,7 @@ Circular dependencies. Refactor to break the cycle.
 ## Layer Violations
 
 - `admin/inertia/components/TierSelectionModal.tsx` (presentation) -> `admin/inertia/hooks/useDiskDisplayData.ts` (data_access): presentation must not import data_access
+- `admin/inertia/hooks/useSystemSetting.ts` (presentation) -> `admin/types/kv_store.ts` (data_access): presentation must not import data_access
 - `admin/inertia/pages/easy-setup/index.tsx` (presentation) -> `admin/inertia/hooks/useDiskDisplayData.ts` (data_access): presentation must not import data_access
 - `admin/inertia/pages/settings/system.tsx` (presentation) -> `admin/inertia/hooks/useDiskDisplayData.ts` (data_access): presentation must not import data_access
 

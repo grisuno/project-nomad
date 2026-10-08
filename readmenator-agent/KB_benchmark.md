@@ -14,7 +14,7 @@
 - Symbols:
   - `BenchmarkRun` (class, line 4)
 - Depends on: `admin/ace.js`
-- Imported by: `admin/app/controllers/benchmark_controller.ts`, `admin/commands/benchmark/results.ts`, `admin/commands/benchmark/submit.ts`, `admin/commands/queue/work.ts`, `admin/database/seeders/service_seeder.ts`
+- Imported by: `admin/app/controllers/benchmark_controller.ts`, `admin/app/controllers/benchmark_controller.ts`, `admin/commands/benchmark/results.ts`, `admin/commands/benchmark/submit.ts`, `admin/commands/queue/work.ts`, `admin/database/seeders/service_seeder.ts`
 
 ## admin/commands/benchmark/submit.ts
 - Layer: utility

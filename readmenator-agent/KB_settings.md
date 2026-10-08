@@ -18,7 +18,6 @@
 - Imported by: `admin/app/controllers/settings_controller.ts`
 
 ## admin/inertia/pages/settings/benchmark.tsx
-- Doc: handleFullBenchmarkClick: Handle Full Benchmark click with pre-flight check
 - Layer: presentation
 - Language: tsx
 - Symbols:
@@ -101,4 +100,4 @@
   - `getProgressBarColor` (function, line 394)
   - `getStatusIcon` (function, line 400)
 - Depends on: `admin/app/utils/version.ts`, `admin/inertia/context/NotificationContext.ts`, `admin/inertia/hooks/useSystemSetting.ts`, `admin/types/system.ts`
-- Imported by: `admin/app/controllers/chats_controller.ts`, `admin/app/controllers/settings_controller.ts`, `admin/app/jobs/download_model_job.ts`, `admin/app/jobs/embed_file_job.ts`, `admin/app/jobs/run_download_job.ts`, `admin/app/jobs/run_extract_pmtiles_job.ts`, `admin/app/services/benchmark_service.ts`, `admin/app/services/countries_service.ts`, `admin/app/services/docker_service.ts`, `admin/app/services/map_service.ts`, `admin/database/migrations/1771000000002_pin_latest_service_images.ts`, `admin/database/migrations/1771100000001_migrate_kiwix_to_library_mode.ts`, `admin/providers/qdrant_restart_policy_provider.ts`
+- Imported by: `admin/app/controllers/chats_controller.ts`, `admin/app/controllers/settings_controller.ts`, `admin/app/jobs/download_model_job.ts`, `admin/app/jobs/embed_file_job.ts`, `admin/app/jobs/run_download_job.ts`, `admin/app/jobs/run_extract_pmtiles_job.ts`, `admin/app/services/benchmark_service.ts`, `admin/app/services/countries_service.ts`, `admin/app/services/docker_service.ts`, `admin/app/services/map_service.ts`, `admin/database/migrations/1771000000002_pin_latest_service_images.ts`, `admin/database/migrations/1771000000002_pin_latest_service_images.ts`, `admin/database/migrations/1771000000002_pin_latest_service_images.ts`, `admin/database/migrations/1771000000002_pin_latest_service_images.ts`, `admin/database/migrations/1771000000002_pin_latest_service_images.ts`, `admin/database/migrations/1771000000002_pin_latest_service_images.ts`, `admin/database/migrations/1771000000002_pin_latest_service_images.ts`, `admin/database/migrations/1771100000001_migrate_kiwix_to_library_mode.ts`, `admin/database/migrations/1771100000001_migrate_kiwix_to_library_mode.ts`, `admin/providers/qdrant_restart_policy_provider.ts`, `admin/providers/qdrant_restart_policy_provider.ts`

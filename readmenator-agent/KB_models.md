@@ -43,14 +43,12 @@
   - `InstalledResource` (class, line 4)
 
 ## admin/app/models/kb_ingest_state.ts
-- Doc: KbIngestState: Tracks the per-file decision and outcome of AI knowledge-base ingestion.
 - Layer: business_logic
 - Language: ts
 - Symbols:
   - `KbIngestState` (class, line 15)
 
 ## admin/app/models/kb_ratio_registry.ts
-- Doc: KbRatioRegistry: Self-calibrating registry of `{filename-prefix → chunks_per_mb}` ratios used...
 - Layer: business_logic
 - Language: ts
 - Symbols:
@@ -58,7 +56,6 @@
 - Depends on: `admin/app/utils/kb_ratio_lookup.ts`
 
 ## admin/app/models/kv_store.ts
-- Doc: KVStore: Generic key-value store model for storing various settings that don't necessitate their...
 - Layer: business_logic
 - Language: ts
 - Symbols:

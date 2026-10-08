@@ -14,11 +14,11 @@
 - Language: js
 
 ## admin/tailwind.config.ts
-- Doc: @type {import('tailwindcss').Config}
 - Layer: infrastructure
+- Doc: @type {import('tailwindcss').Config}
 - Language: ts
 
 ## admin/vite.config.ts
-- Layer: infrastructure
+- Layer: presentation
 - Language: ts
 - Depends on: `admin/config/vite.ts`

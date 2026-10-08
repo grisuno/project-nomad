@@ -9,7 +9,6 @@
 - Language: ts
 
 ## admin/app/validators/common.ts
-- Doc: assertNotPrivateUrl: Checks whether a URL points to a loopback or link-local address.
 - Layer: utility
 - Language: ts
 - Symbols:

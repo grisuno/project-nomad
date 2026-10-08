@@ -1,7 +1,7 @@
 # Subsystem: install
 
 ## install/collect_disk_info.sh
-- Layer: utility
+- Layer: infrastructure
 - Language: sh
 
 ## install/entrypoint.sh
@@ -9,8 +9,8 @@
 - Language: sh
 
 ## install/install_nomad.sh
-- Doc: Project N.O.M.A.D.
 - Layer: utility
+- Doc: Project N.O.M.A.D. Installation Script    Script                | Project N.O.M.A.D. Installation Script Version        
 - Language: sh
 - Symbols:
   - `header` (function, line 47)
@@ -36,8 +36,8 @@
   - `success_message` (function, line 598)
 
 ## install/migrate-disk-collector.sh
-- Doc: Project N.O.M.A.D. — Disk Collector Migration Script  Script                | Project N.O.M.A.D.
-- Layer: utility
+- Layer: infrastructure
+- Doc: Project N.O.M.A.D. — Disk Collector Migration Script  Script                | Project N.O.M.A.D. Disk Collector Migratio
 - Language: sh
 - Symbols:
   - `check_is_bash` (function, line 46)
@@ -53,8 +53,8 @@
   - `verify_disk_collector_running` (function, line 203)
 
 ## install/run_updater_fixes.sh
-- Doc: Project N.O.M.A.D. - One-Time Updater Fix Script  Script                | Project N.O.M.A.D.
 - Layer: utility
+- Doc: Project N.O.M.A.D. - One-Time Updater Fix Script  Script                | Project N.O.M.A.D. One-Time Updater Fix Script
 - Language: sh
 - Symbols:
   - `check_is_bash` (function, line 55)
@@ -79,8 +79,8 @@
 - Language: sh
 
 ## install/uninstall_nomad.sh
-- Doc: Project N.O.M.A.D.
 - Layer: utility
+- Doc: Project N.O.M.A.D. Uninstall Script    Script                | Project N.O.M.A.D. Uninstall Script Version              
 - Language: sh
 - Symbols:
   - `check_has_sudo` (function, line 27)
@@ -93,8 +93,8 @@
   - `uninstall_nomad` (function, line 105)
 
 ## install/update_nomad.sh
-- Doc: Project N.O.M.A.D.
 - Layer: utility
+- Doc: Project N.O.M.A.D. Update Script    Script                | Project N.O.M.A.D. Update Script Version               | 1.0
 - Language: sh
 - Symbols:
   - `check_has_sudo` (function, line 31)

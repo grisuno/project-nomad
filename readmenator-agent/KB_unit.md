@@ -14,7 +14,6 @@
 - Depends on: `admin/inertia/lib/global_map_banner.ts`
 
 ## admin/tests/unit/kb_file_grouping.spec.ts
-- Doc: asInfos: Wrap source paths into the minimal StoredFileInfo shape that `groupAndSortKbFiles` now...
 - Layer: testing
 - Language: ts
 - Symbols:

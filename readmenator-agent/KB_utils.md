@@ -1,7 +1,6 @@
 # Subsystem: utils
 
 ## admin/app/utils/downloads.ts
-- Doc: doResumableDownload: Perform a resumable download with progress tracking @param param0...
 - Layer: utility
 - Language: ts
 - Symbols:
@@ -15,7 +14,6 @@
 - Depends on: `admin/app/utils/fs.ts`
 
 ## admin/app/utils/fs.ts
-- Doc: isValidZimFile: Validates that a file has the ZIM magic number (0x44D495A).
 - Layer: utility
 - Language: ts
 - Symbols:
@@ -34,10 +32,9 @@
   - `matchesDevice` (function, line 160)
   - `determineFileType` (function, line 177)
   - `sanitizeFilename` (function, line 199)
-- Imported by: `admin/app/controllers/rag_controller.ts`, `admin/app/jobs/run_extract_pmtiles_job.ts`, `admin/app/services/collection_manifest_service.ts`, `admin/app/services/collection_update_service.ts`, `admin/app/services/docker_service.ts`, `admin/app/services/docs_service.ts`, `admin/app/services/download_service.ts`, `admin/app/services/kiwix_library_service.ts`, `admin/app/services/map_service.ts`, `admin/app/services/rag_service.ts`, `admin/app/services/system_service.ts`, `admin/app/services/system_update_service.ts`, `admin/app/services/zim_extraction_service.ts`, `admin/app/services/zim_service.ts`, `admin/app/utils/downloads.ts`
+- Imported by: `admin/app/controllers/rag_controller.ts`, `admin/app/jobs/run_extract_pmtiles_job.ts`, `admin/app/services/collection_manifest_service.ts`, `admin/app/services/collection_update_service.ts`, `admin/app/services/docker_service.ts`, `admin/app/services/docs_service.ts`, `admin/app/services/download_service.ts`, `admin/app/services/kiwix_library_service.ts`, `admin/app/services/map_service.ts`, `admin/app/services/rag_service.ts`, `admin/app/services/system_service.ts`, `admin/app/services/system_update_service.ts`, `admin/app/services/zim_extraction_service.ts`, `admin/app/services/zim_service.ts`, `admin/app/utils/downloads.ts`, `admin/app/utils/downloads.ts`
 
 ## admin/app/utils/kb_ingest_decision.ts
-- Doc: decideScanAction: Decide what scanAndSyncStorage should do for a single embeddable file.
 - Layer: utility
 - Language: ts
 - Symbols:
@@ -52,7 +49,6 @@
 - Imported by: `admin/inertia/lib/kb_job_health_display.ts`, `admin/tests/unit/kb_job_health.spec.ts`
 
 ## admin/app/utils/kb_ratio_lookup.ts
-- Doc: estimateBatch: Aggregate an embedding-disk-cost estimate across a batch of files (curated tier...
 - Layer: utility
 - Language: ts
 - Symbols:
@@ -78,7 +74,6 @@
 - Imported by: `admin/inertia/components/chat/ChatModal.tsx`
 
 ## admin/app/utils/version.ts
-- Doc: isNewerVersion: Compare two semantic version strings to determine if the first is newer than the...
 - Layer: utility
 - Language: ts
 - Symbols:
@@ -88,7 +83,6 @@
 - Imported by: `admin/app/jobs/run_extract_pmtiles_job.ts`, `admin/app/services/container_registry_service.ts`, `admin/app/services/docker_service.ts`, `admin/app/services/system_service.ts`, `admin/inertia/components/UpdateServiceModal.tsx`, `admin/inertia/pages/settings/update.tsx`
 
 ## admin/app/utils/zim_filename.ts
-- Doc: zimFilenameStem: Strip the trailing `_YYYY-MM(-DD).zim` date suffix from a Kiwix-style ZIM...
 - Layer: utility
 - Language: ts
 - Symbols:

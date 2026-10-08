@@ -12,10 +12,9 @@
 - Language: ts
 - Symbols:
   - `classNames` (function, line 2)
-- Imported by: `admin/inertia/components/Alert.tsx`, `admin/inertia/components/CountryPickerModal.tsx`, `admin/inertia/components/DynamicIcon.tsx`, `admin/inertia/components/HorizontalBarChart.tsx`, `admin/inertia/components/InstallActivityFeed.tsx`, `admin/inertia/components/StorageProjectionBar.tsx`, `admin/inertia/components/StyledModal.tsx`, `admin/inertia/components/StyledSidebar.tsx`, `admin/inertia/components/StyledTable.tsx`, `admin/inertia/components/TierSelectionModal.tsx`, `admin/inertia/components/WikipediaSelector.tsx`, `admin/inertia/components/chat/ChatInterface.tsx`, `admin/inertia/components/chat/ChatMessageBubble.tsx`, `admin/inertia/components/chat/ChatSidebar.tsx`, `admin/inertia/components/chat/index.tsx`, `admin/inertia/components/inputs/Input.tsx`, `admin/inertia/components/systeminfo/CircularGauge.tsx`, `admin/inertia/components/systeminfo/InfoCard.tsx`, `admin/inertia/layouts/AppLayout.tsx`, `admin/inertia/pages/easy-setup/index.tsx`
+- Imported by: `admin/inertia/components/Alert.tsx`, `admin/inertia/components/Alert.tsx`, `admin/inertia/components/Alert.tsx`, `admin/inertia/components/Alert.tsx`, `admin/inertia/components/Alert.tsx`, `admin/inertia/components/Alert.tsx`, `admin/inertia/components/Alert.tsx`, `admin/inertia/components/CountryPickerModal.tsx`, `admin/inertia/components/CountryPickerModal.tsx`, `admin/inertia/components/CountryPickerModal.tsx`, `admin/inertia/components/DynamicIcon.tsx`, `admin/inertia/components/HorizontalBarChart.tsx`, `admin/inertia/components/HorizontalBarChart.tsx`, `admin/inertia/components/HorizontalBarChart.tsx`, `admin/inertia/components/InstallActivityFeed.tsx`, `admin/inertia/components/InstallActivityFeed.tsx`, `admin/inertia/components/StorageProjectionBar.tsx`, `admin/inertia/components/StorageProjectionBar.tsx`, `admin/inertia/components/StorageProjectionBar.tsx`, `admin/inertia/components/StyledModal.tsx`, `admin/inertia/components/StyledModal.tsx`, `admin/inertia/components/StyledSidebar.tsx`, `admin/inertia/components/StyledTable.tsx`, `admin/inertia/components/StyledTable.tsx`, `admin/inertia/components/StyledTable.tsx`, `admin/inertia/components/StyledTable.tsx`, `admin/inertia/components/StyledTable.tsx`, `admin/inertia/components/StyledTable.tsx`, `admin/inertia/components/TierSelectionModal.tsx`, `admin/inertia/components/TierSelectionModal.tsx`, `admin/inertia/components/WikipediaSelector.tsx`, `admin/inertia/components/WikipediaSelector.tsx`, `admin/inertia/components/WikipediaSelector.tsx`, `admin/inertia/components/chat/ChatInterface.tsx`, `admin/inertia/components/chat/ChatInterface.tsx`, `admin/inertia/components/chat/ChatMessageBubble.tsx`, `admin/inertia/components/chat/ChatMessageBubble.tsx`, `admin/inertia/components/chat/ChatSidebar.tsx`, `admin/inertia/components/chat/ChatSidebar.tsx`, `admin/inertia/components/chat/ChatSidebar.tsx`, `admin/inertia/components/chat/index.tsx`, `admin/inertia/components/chat/index.tsx`, `admin/inertia/components/inputs/Input.tsx`, `admin/inertia/components/inputs/Input.tsx`, `admin/inertia/components/inputs/Input.tsx`, `admin/inertia/components/systeminfo/CircularGauge.tsx`, `admin/inertia/components/systeminfo/CircularGauge.tsx`, `admin/inertia/components/systeminfo/CircularGauge.tsx`, `admin/inertia/components/systeminfo/InfoCard.tsx`, `admin/inertia/components/systeminfo/InfoCard.tsx`, `admin/inertia/layouts/AppLayout.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`
 
 ## admin/inertia/lib/collections.ts
-- Doc: resolveTierResources: Resolve all resources for a tier, including inherited resources from...
 - Layer: utility
 - Language: ts
 - Symbols:
@@ -35,7 +34,6 @@
 - Imported by: `admin/inertia/components/DynamicIcon.tsx`
 
 ## admin/inertia/lib/kb_file_grouping.ts
-- Doc: groupAndSortKbFiles: Group stored-file rows into table rows for the Stored Files panel.  - Admin...
 - Layer: utility
 - Language: ts
 - Symbols:
@@ -46,7 +44,6 @@
 - Imported by: `admin/inertia/components/chat/KnowledgeBaseModal.tsx`, `admin/tests/unit/kb_file_grouping.spec.ts`
 
 ## admin/inertia/lib/kb_guardrail.ts
-- Doc: evaluateGuardrail: Decide whether a bulk indexing action should be gated behind the guardrail modal.
 - Layer: utility
 - Language: ts
 - Symbols:
@@ -54,8 +51,7 @@
 - Imported by: `admin/inertia/components/TierSelectionModal.tsx`, `admin/tests/unit/kb_guardrail.spec.ts`
 
 ## admin/inertia/lib/kb_job_health_display.ts
-- Doc: formatTimeAgo: Format a relative timestamp as "Xs ago", "Xm ago", "Xh ago" with sensible...
-- Layer: utility
+- Layer: infrastructure
 - Language: ts
 - Symbols:
   - `formatTimeAgo` (function, line 45)
@@ -71,7 +67,6 @@
 - Imported by: `admin/inertia/layouts/SettingsLayout.tsx`, `admin/inertia/pages/home.tsx`, `admin/inertia/pages/settings/apps.tsx`
 
 ## admin/inertia/lib/util.ts
-- Doc: catchInternal: A higher-order function that wraps an asynchronous function to catch and log...
 - Layer: utility
 - Language: ts
 - Symbols:

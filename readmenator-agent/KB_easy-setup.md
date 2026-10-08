@@ -9,7 +9,6 @@
 - Imported by: `admin/app/controllers/easy_setup_controller.ts`
 
 ## admin/inertia/pages/easy-setup/index.tsx
-- Doc: handleCategoryClick: Category/tier handlers
 - Layer: presentation
 - Language: tsx
 - Symbols:

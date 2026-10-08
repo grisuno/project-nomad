@@ -1,5 +1,4 @@
-# Symbols (page 1 of 2)
-Pages: [SYMBOLS.md](SYMBOLS.md), [SYMBOLS_p2.md](SYMBOLS_p2.md)
+# Symbols
 
 | Symbol | Kind | File:Line | Signature |
 |--------|------|-----------|-----------|
@@ -496,5 +495,73 @@ Pages: [SYMBOLS.md](SYMBOLS.md), [SYMBOLS_p2.md](SYMBOLS_p2.md)
 | `asInfos` | function | `admin/tests/unit/kb_file_grouping.spec.ts:15` | `` |
 | `streamToString` | function | `admin/util/docs.ts:2` | `` |
 | `chmodRecursive` | function | `admin/util/files.ts:4` | `` |
-
-Next: [SYMBOLS_p2.md](SYMBOLS_p2.md)
+| `chownRecursive` | function | `admin/util/files.ts:30` | `` |
+| `isRawListRemoteZimFilesResponse` | function | `admin/util/zim.ts:3` | `` |
+| `isRawRemoteZimFileEntry` | function | `admin/util/zim.ts:21` | `` |
+| `accept_terms` | function | `install/install_nomad.sh:370` | `` |
+| `check_docker_compose` | function | `install/install_nomad.sh:220` | `` |
+| `check_has_sudo` | function | `install/install_nomad.sh:57` | `` |
+| `check_is_bash` | function | `install/install_nomad.sh:69` | `` |
+| `check_is_debian_based` | function | `install/install_nomad.sh:79` | `` |
+| `check_is_debug_mode` | function | `install/install_nomad.sh:140` | `` |
+| `check_is_x86_64` | function | `install/install_nomad.sh:89` | `` |
+| `create_nomad_directory` | function | `install/install_nomad.sh:391` | `` |
+| `download_helper_scripts` | function | `install/install_nomad.sh:445` | `` |
+| `download_management_compose_file` | function | `install/install_nomad.sh:410` | `` |
+| `ensure_dependencies_installed` | function | `install/install_nomad.sh:104` | `` |
+| `ensure_docker_installed` | function | `install/install_nomad.sh:159` | `` |
+| `generateRandomPass` | function | `install/install_nomad.sh:149` | `` |
+| `get_install_confirmation` | function | `install/install_nomad.sh:355` | `` |
+| `get_local_ip` | function | `install/install_nomad.sh:481` | `` |
+| `header` | function | `install/install_nomad.sh:47` | `` |
+| `header_red` | function | `install/install_nomad.sh:52` | `` |
+| `setup_nvidia_container_toolkit` | function | `install/install_nomad.sh:230` | `` |
+| `start_management_containers` | function | `install/install_nomad.sh:472` | `` |
+| `success_message` | function | `install/install_nomad.sh:598` | `` |
+| `verify_gpu_setup` | function | `install/install_nomad.sh:488` | `` |
+| `add_disk_collector_service` | function | `install/migrate-disk-collector.sh:153` | `` |
+| `backup_compose_file` | function | `install/migrate-disk-collector.sh:122` | `` |
+| `check_compose_file` | function | `install/migrate-disk-collector.sh:93` | `` |
+| `check_confirmation` | function | `install/migrate-disk-collector.sh:65` | `` |
+| `check_docker_running` | function | `install/migrate-disk-collector.sh:81` | `` |
+| `check_has_sudo` | function | `install/migrate-disk-collector.sh:55` | `` |
+| `check_is_bash` | function | `install/migrate-disk-collector.sh:46` | `` |
+| `remove_old_bind_mount` | function | `install/migrate-disk-collector.sh:134` | `` |
+| `restart_stack` | function | `install/migrate-disk-collector.sh:186` | `` |
+| `stop_old_host_process` | function | `install/migrate-disk-collector.sh:103` | `` |
+| `verify_disk_collector_running` | function | `install/migrate-disk-collector.sh:203` | `` |
+| `backup_compose_file` | function | `install/run_updater_fixes.sh:119` | `` |
+| `check_compose_file` | function | `install/run_updater_fixes.sh:97` | `` |
+| `check_confirmation` | function | `install/run_updater_fixes.sh:64` | `` |
+| `check_docker_running` | function | `install/run_updater_fixes.sh:85` | `` |
+| `check_has_sudo` | function | `install/run_updater_fixes.sh:75` | `` |
+| `check_is_bash` | function | `install/run_updater_fixes.sh:55` | `` |
+| `check_sidecar_dir` | function | `install/run_updater_fixes.sh:106` | `` |
+| `download_updated_sidecar_files` | function | `install/run_updater_fixes.sh:153` | `` |
+| `fix_sidecar_volume_mount` | function | `install/run_updater_fixes.sh:130` | `` |
+| `rebuild_sidecar` | function | `install/run_updater_fixes.sh:170` | `` |
+| `restart_sidecar` | function | `install/run_updater_fixes.sh:179` | `` |
+| `verify_sidecar_running` | function | `install/run_updater_fixes.sh:197` | `` |
+| `log` | function | `install/sidecar-disk-collector/collect-disk-info.sh:9` | `` |
+| `cleanup` | function | `install/sidecar-updater/update-watcher.sh:111` | `` |
+| `log` | function | `install/sidecar-updater/update-watcher.sh:12` | `` |
+| `perform_update` | function | `install/sidecar-updater/update-watcher.sh:31` | `` |
+| `write_status` | function | `install/sidecar-updater/update-watcher.sh:16` | `` |
+| `check_current_directory` | function | `install/uninstall_nomad.sh:39` | `` |
+| `check_docker_compose` | function | `install/uninstall_nomad.sh:78` | `` |
+| `check_has_sudo` | function | `install/uninstall_nomad.sh:27` | `` |
+| `ensure_docker_installed` | function | `install/uninstall_nomad.sh:71` | `` |
+| `ensure_management_compose_file_exists` | function | `install/uninstall_nomad.sh:46` | `` |
+| `get_uninstall_confirmation` | function | `install/uninstall_nomad.sh:53` | `` |
+| `storage_cleanup` | function | `install/uninstall_nomad.sh:88` | `` |
+| `uninstall_nomad` | function | `install/uninstall_nomad.sh:105` | `` |
+| `check_docker_compose` | function | `install/update_nomad.sh:97` | `` |
+| `check_has_sudo` | function | `install/update_nomad.sh:31` | `` |
+| `check_is_bash` | function | `install/update_nomad.sh:43` | `` |
+| `check_is_debian_based` | function | `install/update_nomad.sh:53` | `` |
+| `ensure_docker_compose_file_exists` | function | `install/update_nomad.sh:107` | `` |
+| `ensure_docker_installed_and_running` | function | `install/update_nomad.sh:81` | `` |
+| `force_recreate` | function | `install/update_nomad.sh:114` | `` |
+| `get_local_ip` | function | `install/update_nomad.sh:128` | `` |
+| `get_update_confirmation` | function | `install/update_nomad.sh:63` | `` |
+| `success_message` | function | `install/update_nomad.sh:136` | `` |

@@ -14,7 +14,6 @@
 - Depends on: `admin/constants/service_names.ts`, `admin/inertia/context/ModalContext.ts`, `admin/inertia/hooks/useServiceInstalledStatus.tsx`, `admin/types/zim.ts`
 
 ## admin/inertia/pages/settings/zim/remote-explorer.tsx
-- Doc: handleSourceChange: When selecting a custom library, navigate to its root
 - Layer: presentation
 - Language: tsx
 - Symbols:

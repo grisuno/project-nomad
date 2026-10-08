@@ -15,8 +15,8 @@
 - Depends on: `admin/commands/benchmark/run.ts`, `admin/constants/kiwix.ts`, `admin/constants/service_names.ts`
 
 ## admin/inertia/app/app.tsx
-- Doc: <reference path="../../adonisrc.ts" /> <reference path="../../config/inertia.ts" />
 - Layer: presentation
+- Doc: <reference path="../../adonisrc.ts" /> <reference path="../../config/inertia.ts" />
 - Language: tsx
 - Symbols:
   - `environment` (function, line 38)
@@ -46,15 +46,15 @@
   - `to` (function, line 18)
 
 ## install/sidecar-disk-collector/collect-disk-info.sh
-- Doc: Project N.O.M.A.D. - Disk Info Collector Sidecar  Reads host block device and filesystem info...
-- Layer: utility
+- Layer: infrastructure
+- Doc: Project N.O.M.A.D. - Disk Info Collector Sidecar  Reads host block device and filesystem info via the /:/host:ro,rslave 
 - Language: sh
 - Symbols:
   - `log` (function, line 9)
 
 ## install/sidecar-updater/update-watcher.sh
-- Doc: Project N.O.M.A.D.
 - Layer: utility
+- Doc: Project N.O.M.A.D. Update Sidecar - Polls for update requests and executes them
 - Language: sh
 - Symbols:
   - `log` (function, line 12)

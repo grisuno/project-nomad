@@ -1,7 +1,6 @@
 # Subsystem: controllers
 
 ## admin/app/controllers/benchmark_controller.ts
-- Doc: statusCode: Pass through the status code from the service if available, otherwise default to 400
 - Layer: presentation
 - Language: ts
 - Symbols:

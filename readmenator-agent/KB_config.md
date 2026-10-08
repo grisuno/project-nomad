@@ -40,8 +40,8 @@
 - Imported by: `admin/app/jobs/check_service_updates_job.ts`, `admin/app/jobs/check_update_job.ts`, `admin/app/jobs/download_model_job.ts`, `admin/app/jobs/embed_file_job.ts`, `admin/app/jobs/run_benchmark_job.ts`, `admin/app/jobs/run_download_job.ts`, `admin/app/jobs/run_extract_pmtiles_job.ts`
 
 ## admin/config/session.ts
-- Doc: import env from '#start/env' import app from '@adonisjs/core/services/app' import {...
 - Layer: infrastructure
+- Doc: import env from '#start/env' import app from '@adonisjs/core/services/app' import { defineConfig, stores } from '@adonis
 - Language: ts
 
 ## admin/config/shield.ts

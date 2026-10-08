@@ -7,7 +7,6 @@
   - `CompressionMiddleware` (class, line 22)
 
 ## admin/app/middleware/container_bindings_middleware.ts
-- Doc: ContainerBindingsMiddleware: The container bindings middleware binds classes to their request...
 - Layer: infrastructure
 - Language: ts
 - Symbols:
@@ -17,14 +16,12 @@
 - Depends on: `admin/config/logger.ts`
 
 ## admin/app/middleware/force_json_response_middleware.ts
-- Doc: ForceJsonResponseMiddleware: Updating the "Accept" header to always accept "application/json"...
 - Layer: infrastructure
 - Language: ts
 - Symbols:
   - `ForceJsonResponseMiddleware` (class, line 9)
 
 ## admin/app/middleware/maps_static_middleware.ts
-- Doc: MapsStaticMiddleware: See #providers/map_static_provider.ts for explanation of why this...
 - Layer: infrastructure
 - Language: ts
 - Symbols:

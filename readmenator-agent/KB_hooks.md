@@ -9,7 +9,6 @@
 - Imported by: `admin/inertia/pages/settings/models.tsx`, `admin/inertia/pages/settings/zim/remote-explorer.tsx`
 
 ## admin/inertia/hooks/useDiskDisplayData.ts
-- Doc: getAllDiskDisplayItems: import { Systeminformation } from 'systeminformation' import {...
 - Layer: data_access
 - Language: ts
 - Symbols:
@@ -35,8 +34,8 @@
 - Imported by: `admin/inertia/components/ActiveEmbedJobs.tsx`
 
 ## admin/inertia/hooks/useErrorNotification.ts
-- Doc: Helper hook to show error notifications
 - Layer: utility
+- Doc: Helper hook to show error notifications
 - Language: ts
 - Symbols:
   - `useErrorNotification` (function, line 4)
@@ -45,8 +44,8 @@
 - Imported by: `admin/inertia/pages/settings/apps.tsx`
 
 ## admin/inertia/hooks/useInternetStatus.ts
-- Doc: Helper hook to check internet connection status
 - Layer: presentation
+- Doc: Helper hook to check internet connection status
 - Language: ts
 - Symbols:
   - `useInternetStatus` (function, line 6)
@@ -57,10 +56,10 @@
 - Language: ts
 - Symbols:
   - `useMapMarkers` (function, line 25)
-- Imported by: `admin/inertia/components/maps/MapComponent.tsx`, `admin/inertia/components/maps/MarkerPanel.tsx`
+- Imported by: `admin/inertia/components/maps/MapComponent.tsx`, `admin/inertia/components/maps/MapComponent.tsx`, `admin/inertia/components/maps/MarkerPanel.tsx`
 
 ## admin/inertia/hooks/useMapRegionFiles.ts
-- Layer: utility
+- Layer: presentation
 - Language: ts
 - Symbols:
   - `useMapRegionFiles` (function, line 5)
@@ -82,7 +81,7 @@
 - Imported by: `admin/inertia/pages/easy-setup/complete.tsx`, `admin/inertia/pages/settings/apps.tsx`
 
 ## admin/inertia/hooks/useServiceInstalledStatus.tsx
-- Layer: business_logic
+- Layer: presentation
 - Language: tsx
 - Symbols:
   - `useServiceInstalledStatus` (function, line 5)
@@ -90,20 +89,20 @@
 - Imported by: `admin/inertia/layouts/AppLayout.tsx`, `admin/inertia/layouts/SettingsLayout.tsx`, `admin/inertia/pages/settings/benchmark.tsx`, `admin/inertia/pages/settings/models.tsx`, `admin/inertia/pages/settings/zim/index.tsx`, `admin/inertia/pages/settings/zim/remote-explorer.tsx`
 
 ## admin/inertia/hooks/useSystemInfo.ts
-- Layer: utility
+- Layer: presentation
 - Language: ts
 - Symbols:
   - `useSystemInfo` (function, line 10)
 - Depends on: `admin/types/system.ts`
-- Imported by: `admin/inertia/components/TierSelectionModal.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/settings/models.tsx`, `admin/inertia/pages/settings/system.tsx`
+- Imported by: `admin/inertia/components/TierSelectionModal.tsx`, `admin/inertia/components/TierSelectionModal.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/settings/models.tsx`, `admin/inertia/pages/settings/models.tsx`, `admin/inertia/pages/settings/system.tsx`, `admin/inertia/pages/settings/system.tsx`
 
 ## admin/inertia/hooks/useSystemSetting.ts
-- Layer: utility
+- Layer: presentation
 - Language: ts
 - Symbols:
   - `useSystemSetting` (function, line 12)
 - Depends on: `admin/types/kv_store.ts`
-- Imported by: `admin/inertia/components/chat/ChatModal.tsx`, `admin/inertia/components/chat/index.tsx`, `admin/inertia/pages/home.tsx`, `admin/inertia/pages/settings/update.tsx`
+- Imported by: `admin/inertia/components/chat/ChatModal.tsx`, `admin/inertia/components/chat/ChatModal.tsx`, `admin/inertia/components/chat/index.tsx`, `admin/inertia/components/chat/index.tsx`, `admin/inertia/components/chat/index.tsx`, `admin/inertia/pages/home.tsx`, `admin/inertia/pages/home.tsx`, `admin/inertia/pages/settings/update.tsx`, `admin/inertia/pages/settings/update.tsx`
 
 ## admin/inertia/hooks/useTheme.ts
 - Layer: presentation
@@ -111,12 +110,12 @@
 - Symbols:
   - `getInitialTheme` (function, line 7)
   - `useTheme` (function, line 16)
-- Imported by: `admin/inertia/providers/ThemeProvider.tsx`
+- Imported by: `admin/inertia/providers/ThemeProvider.tsx`, `admin/inertia/providers/ThemeProvider.tsx`
 
 ## admin/inertia/hooks/useUpdateAvailable.ts
-- Layer: utility
+- Layer: presentation
 - Language: ts
 - Symbols:
   - `useUpdateAvailable` (function, line 6)
 - Depends on: `admin/types/system.ts`
-- Imported by: `admin/inertia/pages/home.tsx`
+- Imported by: `admin/inertia/pages/home.tsx`, `admin/inertia/pages/home.tsx`

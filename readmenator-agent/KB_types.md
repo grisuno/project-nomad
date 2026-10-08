@@ -24,8 +24,8 @@
 - Imported by: `admin/inertia/components/WikipediaSelector.tsx`, `admin/inertia/lib/api.ts`
 
 ## admin/types/files.ts
-- Doc: General file transfer/download utility types
 - Layer: utility
+- Doc: General file transfer/download utility types
 - Language: ts
 - Imported by: `admin/inertia/hooks/useMapRegionFiles.ts`, `admin/inertia/lib/api.ts`, `admin/inertia/pages/maps.tsx`, `admin/inertia/pages/settings/maps.tsx`
 
@@ -55,7 +55,7 @@
 ## admin/types/services.ts
 - Layer: business_logic
 - Language: ts
-- Imported by: `admin/app/jobs/embed_file_job.ts`, `admin/app/services/ollama_service.ts`, `admin/app/services/system_service.ts`, `admin/inertia/components/UpdateServiceModal.tsx`, `admin/inertia/hooks/useServiceInstalledStatus.tsx`, `admin/inertia/lib/api.ts`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/home.tsx`, `admin/inertia/pages/settings/apps.tsx`
+- Imported by: `admin/app/jobs/embed_file_job.ts`, `admin/app/services/ollama_service.ts`, `admin/app/services/system_service.ts`, `admin/inertia/components/UpdateServiceModal.tsx`, `admin/inertia/hooks/useServiceInstalledStatus.tsx`, `admin/inertia/lib/api.ts`, `admin/inertia/pages/easy-setup/index.tsx`, `admin/inertia/pages/home.tsx`, `admin/inertia/pages/home.tsx`, `admin/inertia/pages/settings/apps.tsx`
 
 ## admin/types/system.ts
 - Layer: utility

@@ -25,7 +25,6 @@
 - Imported by: `admin/app/services/download_service.ts`, `admin/app/services/ollama_service.ts`, `admin/commands/queue/work.ts`
 
 ## admin/app/jobs/embed_file_job.ts
-- Doc: onProgress: Progress callback.
 - Layer: utility
 - Language: ts
 - Symbols:
